@@ -51,6 +51,6 @@ app.post('/', function(req, res){
 });
 
 
-app.listen(12000, function(){
-    console.log("Server is running on port 12000");
+app.listen(process.env.PORT || 12000, function(){
+    console.log("Server has started.");
 });
